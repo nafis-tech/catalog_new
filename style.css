@@ -550,6 +550,7 @@ a img.aligncenter {
 @media screen and (max-width: 640px) {
   .page-view .project .text h1 {
     font-size: 28px;
+    flex: 1 1 calc(50% - 30px);
   }
   .page-view .project .text p {
     bottom: 20px;
@@ -1768,7 +1769,7 @@ hr.invis1 {
 	font-size: 14px;
 	cursor: pointer;
 	background: black;
-	padding: 12px 40px;
+	padding: 8px 30px;
 	border: none;
 	border-radius: 20px;
     border: white solid; 
