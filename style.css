@@ -1778,12 +1778,19 @@ hr.invis1 {
 	background: #333333;
 	color: #ffffff;
 }
-
-.gallery-single{
-	margin: 30px 15px;;
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+
 .gallery-single{
+    margin: 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 calc(50% - 30px); 
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -1908,13 +1915,23 @@ hr.invis1 {
     background: #fff;
     color: #faac01;
 }
-@media only screen and (max-width:990px){
-    .gallery-single{ margin-bottom: 30px; }
-}
-@media only screen and (max-width:479px){
-    .gallery-single .title{ font-size: 18px }
+@media only screen and (max-width: 990px) {
+    .gallery-single {
+        margin-bottom: 30px;
+        flex: 1 1 calc(50% - 30px);
+    }
 }
 
+@media only screen and (max-width: 479px) {
+    .gallery-single {
+        margin: 15px;
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .gallery-single .title {
+        font-size: 18px;
+    }
+}
 
 
 
